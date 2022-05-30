@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>positioning before</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+h1{
+	margin-bottom: 15px;
+}
+div#container {
+	background-color: pink;
+	position: relative;
+	top: 60;
+}
+p{
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	margin-bottom: 15px;
+}
+#p1{
+	background-color: blue;
+	position: relative;
+	top: 65px;
+	left: 65px;
+}
+#p2{
+	background-color: red;
+}
+#p3{
+	background-color: green;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#p4{
+	background-color: brown;
+}
+</style>
+</head>
+<body>
+	<h1>positioning Elements</h1>
+
+	<div id="containter">
+	<p id="p1"></p> 
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	</div>
+
+</body>
+</html>
