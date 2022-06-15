@@ -2,7 +2,22 @@ body{
   font-size: 16px;
   color: #fff;
   background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
 }
+/*header*/
+#header-nav {
+  background-color: #fb6319;
+  border-radius: 0px;
+  border: 0px;
+}
+
+
+
+
+
+
+
+
 .navbar-brand h1{
   font-family: 'Lora', serif;
   color: #557c3e;
@@ -12,8 +27,12 @@ body{
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: .30;
+  line-height: .75;
 }
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
 .navbar-brand p{
   color: #000;
   text-transform: uppercase;
@@ -24,28 +43,41 @@ body{
 vertical-align: middle;
 }
 
-#navbarNav{
-  margin-bottom: 30px;
+#navmenu{
+  margin-bottom: 20px;
 
 }
-#navbarNav a{
-  colour: #951c49;
+#navmenu a{
+  colour: #951C49;
     text-align: centre;
 }
-#navbarNav a:hover{
+#navmenu   a:hover{
   background: #E7E7E7;
 }
 #navbarNav a span {
-  font-size: 1.2em;
+  font-size: 1.5em;
  }
  #phone {
-  margin-top: 5px;
+  margin-top: 1.2px;
  }
  #phone a{
 text-align: right;
 padding-bottom: 0px;
+text-decoration: none;
  }
 
  #phone div{
   color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
  }
+    
+.navbar-header button.navbar-toggler, .navbar-header .icon-bar {
+  border: 1px solid: #61122f;
+}
+.navbar-header button.navbar-toggle{
+  clear: both;
+  margin-top: -30px;
+}
+
+    
