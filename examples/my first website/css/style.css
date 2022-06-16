@@ -80,4 +80,93 @@ text-decoration: none;
   margin-top: -30px;
 }
 
-    
+/*HOME PAGE*/
+.d-flex{
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+}
+
+#menu-tile, #specials-tile, #Map-tile{
+  height: 250px;
+  width: 99%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #Map-tile:hover{
+  box-shadow: 0 1px 5px 1px #CCCCCC;
+}
+
+#menu-tile{
+  background: url(https://images.chinahighlights.com/allpicture/2021/12/71879439c9ef4d0da835efb6_cut_750x400_39.jpg) no-repeat;
+  background-position: center;
+}
+#specials-tile{
+  background: url(https://media.istockphoto.com/photos/asian-oranage-chicken-with-green-onions-picture-id483120255?k=20&m=483120255&s=612x612&w=0&h=UX3BT-1WCvwAdsSiuuKTeFjklOdPXndZFwFQ0AeJyGE=) no-repeat;
+  background-position: center;
+}
+#menu-tile span, #specials-tile span, #Map-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+
+
+
+
+/*media query for responsive background image also the jumbotron*/
+@media (min-width: 1200px){
+  .d-flex{
+    background: url(https://www.posist.com/restaurant-times/wp-content/uploads/2016/07/restaurant-1090136_1920-1-1024x683.jpg);
+     height: 675px;
+     width: 1320px;
+      
+  }  
+}
+  /*end of header*/
+
+  /*Footer style*/
+  .panel-footer{
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+    text-align: center;
+  }
+ 
+.panel-footer div.row{
+  margin-bottom: 35px;
+}
+ .panel-footer section hr{
+    width: 100%;
+  }
+#hours, #Address{
+  line-height: 2;
+}  
+#hours > span, #Address > span{
+  font-size: 1.3em;
+}
+#Address p{
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#Testimonials{
+  font-style: italic;
+}
+#Testimonials p:nth-child(2){
+  margin-top: 25px;
+}
+
+/*End of footer*/
