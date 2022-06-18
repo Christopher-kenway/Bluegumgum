@@ -47,11 +47,11 @@ display: none!important;
           </button>
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item ">
+              <li class="nav-item">
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#951C49" class="bi bi-book" viewBox="0 0 16 16">
                     <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
                   </svg>
-                  <a class="nav-link" style="color: #951C49;" aria-current="page" href="Menu-categories.Html">Menu</a>
+                  <a class="nav-link" style="color: #951C49;" aria-current="page" href="#">Menu</a>
                 </span>
               </li>
               <li class="nav-item">
@@ -87,26 +87,56 @@ display: none!important;
  
      <body> 
       <!-- MAIN CONTENT BEGINS -->
-      <div id="main-content" class="container-xxl mb-2 mt-2">
-    <div class="d-flex">
-      <img  class="img-fluid" src="https://www.posist.com/restaurant-times/wp-content/uploads/2016/07/restaurant-1090136_1920-1-1024x683.jpg" height="675"width= "1320"    alt="image of resturant">
-      </div>
-<div id="home-tile" class="row">
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <a href="Menu-categories.Html"><div id="menu-tile"><span>Menu</span></div></a>
-</div>
- <div class="col-md-4 col-sm-6 col-xs-12">
-    <a href="single-categorie.Html"><div id="specials-tile"><span>Specials</span></div></a>
-</div>
- <div class="col-md-4 col-sm-12">
-   <a href="https://goo.gl/maps/tkH8z4AeGduPobjW6" target="_blank"><div id="Map-tile">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.67506323166!2d-76.71387678499758!3d39.36359442693471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2sng!4v1655319038634!5m2!1sen!2sng" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     <span>Map</span>
-   </div></a>
- </div>
-  </div><!--END OF HOME-TILES-->
+      <div id="main-content" class="container-fluid mt-2">
+        <h2 id="Menu-categories-title" class="text-center">Lunch Menu</h2>
+<div class="text-center">Lunch is not served until after 1:00pm</div>
+<section class="row">
+  <div class="menu-item-tile col-md-6">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="menu-item-photo">
+          <div>D01</div>
+          <img src="images/Vealvegetable.jpg" width="250" height="150" class="img-fluid" alt="...">
 
-</div><!--END OF MAIN CONTENT    -->
+        </div>
+        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95
+          <span>
+          (quart)</span></div>
+      </div>
+      <div class="menu-item-discription col-sm-7">
+        <h3 class="menu-item-tile">Szechwan Chilli Chicken</h3>
+        <p class="menu-item-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+    <hr class="d-block d-sm-none">
+  </div>
+
+  <div class="menu-item-tile col-md-6">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="menu-item-photo">
+          <div>D02</div>
+          <img src="images/Vealvegetable.jpg" width="250" height="150" class="img-fluid" alt="...">
+
+        </div>
+        <div class="menu-item-price">$10.95<span>(pint)</span>$14.95
+          <span>(quart)</span></div>
+      </div>
+      <div class="menu-item-discription col-sm-7">
+        <h3 class="menu-item-tile">Szechwan Chilli Chicken</h3>
+        <p class="menu-item-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+    <hr class="d-block d-sm-none">
+  </div>
+    <hr class="d-block d-sm-none">
+  </div>
+</section>
+
+
+        </div>
+      
+<!--END OF MAIN CONTENT    -->
 
 <!-- FOOTER BEGINS -->
 <footer class="panel-footer">
