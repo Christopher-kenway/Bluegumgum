@@ -1,0 +1,48 @@
+/*NAVBAR HEADER STYLE*/
+#navbar-header{
+font-family: 'Caudex', serif;
+	background-color: #20c997;
+	font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+   margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+} 
+/*NAVBAR HEADER STYLE ENDS*/
+
+/*NAVBAR MENU AND BUTTON STYLE*/
+#navbar-header button{
+	border: 1px solid #fff;
+}
+.nav-item:hover {
+  background-color: #1b663e;
+}
+#Navmenu a{
+	color: #000;
+	text-align: center;
+}
+/*NAVBAR STYLING ENDS*/
+
+/*MAIN CONTENT STYLE STARTS*/
+#heading {
+font-family: 'Charis SIL', serif;
+text-align: center;
+font-size:2.9em;
+}
+#main-content{
+	text-align: center;
+font-size:2.5em;
+background-color: grey;
+}
+#main-content p{
+	font-size: 20px;
+	text-align: left;
+}
+#cardInfo{
+	font-family: 'Charis SIL', serif;
+	background-color: grey;
+}
+.card-body div{
+	font-size: ;
+}
