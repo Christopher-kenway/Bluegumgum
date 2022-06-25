@@ -62,12 +62,38 @@ function b() {
 	};
 }
 
-console.log(a());
-console.log(b());
+// console.log(a());
+// console.log(b());
 
-// for loop
+// // for loop
+// var sum = 0;
+// for (var i = 0; i < 10; i++) {
+// 	sum = sum + 1;
+// }
+// console.log("sum of 0 throught 9 is:" + sum);
+
+// ****Best practice for the curly {} style
+// curly brace n the same or next line...
+// // is it just a style
+// function a()
+// {
+// 	return
+// {
+// 	name: "limwa"
+// 	   };
+// }
+
+// function b(){
+// 	return {
+// 		name: "limwa"
+// 	};
+// }
+// console.log(a());
+// console.log(b());
+
+// the for loop
 var sum = 0;
-for (var i = 0; i < 10; i++) {
-	sum = sum + 1;
+for (var i = 0; i < 10; i++){
+	sum = sum + i;
 }
-console.log("sum of 0 throught 9 is:" + sum);
+console.log("sum of 0 through 9 is:" + sum);
