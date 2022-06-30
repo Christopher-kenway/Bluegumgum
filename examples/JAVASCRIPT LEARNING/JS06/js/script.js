@@ -61,17 +61,69 @@
 // console.log("after changePrimitive, orig value:")
 // console.log(value);
 
-function changeObject(ObjValue){
-	console.log("in changeObject...");
-	console.log("before:");
-	console.log(ObjValue);
+// function changeObject(ObjValue){
+// 	console.log("in changeObject...");
+// 	console.log("before:");
+// 	console.log(ObjValue);
 
-	ObjValue.x = 5;
-	console.log("after:");
-	console.log(ObjValue);
-}
-value = {x: 7};
-changeObject(value);
-console.log("after changeObject, orig value:");
-console.log(value);
+// 	ObjValue.x = 5;
+// 	console.log("after:");
+// 	console.log(ObjValue);
+// }
+// value = {x: 7};
+// changeObject(value);
+// console.log("after changeObject, orig value:");
+// console.log(value);
 
+// new new new 
+// function test(){
+// 	console.log("hello coursera!");
+// }
+// test();
+
+// function constructors
+// function Circle (radius){
+// 	this.radius = radius;
+
+// 	this.getArea =
+// 	function (){
+// 		return Math.PI * Math.pow(this.radius, 2);
+// 	};
+// }
+
+// var myCircle = new Circle(10);
+// console.log(myCircle);
+
+// function Circle (radius){
+// 	this.radius = radius;
+// }
+// Circle.prototype.getArea =
+// function (){
+// return Math.PI * Mth.pow(this.radius, 2);
+// };
+
+// var myCircle = new Circle(10);
+// console.log(myCircle); 
+
+// var myOtherCircle = new Circle(20);
+// console.log(myOtherCircle);
+
+// Object Literals and "this"
+var literalCircle = { //new object()
+	radius: 10,
+
+	getArea: function () {
+		var self = this;
+		console.log(this);
+
+		var increaseRadius = function (){
+			self.radius = 20;
+		};
+		increaseRadius();
+		console.log(this.radius);
+
+		return Math.PI * Math.pow(this.radius, 2);
+	}
+};
+ 
+ console.log(literalCircle.getArea());
