@@ -1,16 +1,13 @@
-<script>
-var car = {
-    startEngine: function () {
-        console.log("Car started");             
-    }        
+(function (window){
+	var johnGreeter = {};
+johnGreeter.name = "kenway";
+johnGreeter.sayHi = function () {
+	console.log("hi " + johnGreeter.name);
 }
-  
-var bike = {
-    startEngine: function () {
-        console.log("Bike started");
-    }
-}
-  
-car.startEngine();
-bike.startEngine();
-</script>
+
+window.johnGreeter = johnGreeter;
+
+})(window);
+
+
+
