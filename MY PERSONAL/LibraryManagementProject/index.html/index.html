@@ -4,99 +4,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>STUDENT LIBRARY MANAGEMENT</title>
 </head>
-<header>
-    <!-- navbar begins -->
-    <nav class="navbar" style="background-color:  #ff6a00;">
-        <div class="container-fluid">
-            <!-- the david chu logo -->
-            <style>
-                @media screen and (max-width: 500px) {
-                    .desktop {
-                        display: none !important;
-                    }
-            </style>
-            <a class="navbar-brand custom-brand desktop" href="#">
-                <img style="display: block; width: 100px; margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color: 300ms;" src="https://www.econdolence.com/Files/Directory%20Folders/19822_1.png" alt="">
-            </a>
-            <!-- end of david chu logo -->
-            <!-- brand name and K THING -->
-            <a class="navbar-brand me-auto" href="#">
-                <h1>David Chu's China Bistro</h1>
-                <p>
-                    <img src="https://usmile581.github.io/Bistro_Restaurant/images/star-k-logo.png" alt="">
-                    <span>kosher certified</span>
-                </p>
-            </a>
-            <!-- NAVBAR MENU -->
+ <!-- navbar begins -->
+<nav class="navbar navbar-expand-lg" style="background-color: #e6ddeb; ">
+    <div class="container-fliud">
+        <a class="navbar-brand" href="#">
+            <img src="https://covenantuniversity.edu.ng/images/logos/covenant-university-logo-desktop.png" width="282" height="88">
+           </a>
 
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-
-                    <button class="navbar-toggler pull-left" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navmenu">
-                        <ul class="navbar-nav me-auto ">
-                            <li class="nav-item ">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#951C49" class="bi bi-book" viewBox="0 0 16 16">
-                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
-                                </svg>
-                                <a id="navmenu" class="nav-link active" style="color: #951C49;" aria-current="page" href="#">Menu</a>
-
-                            </li>
-                            <li class="nav-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#951C49" class="bi bi-info-square" viewBox="0 0 16 16">
-                                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                                </svg>
-                                <a class="nav-link" style="color: #951C49;" href="#">About</a>
-
-                            </li>
-                            <li class="nav-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#951C49" class="bi bi-award" viewBox="0 0 16 16">
-                                    <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
-                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
-                                </svg>
-                                <a class="nav-link" style="color: #951C49;" href="#">Awards</a>
-
-                            </li>
-
-                            <div class=".d-block">
-                            <li class="d-block" id="phone">
-                                <a href="tel:234-234-2334" style="color: #951C49;"><span>234-234-2334</span></a>
-                                <div>we Deliver</div>
-                            </li>
-                    </div>
-
-                    </ul>
-
-                </div>
-        </div>
-
-    </nav>
-    <div class=".d-block d-sm-none">
-        <li class="d-block" id="phone">
-            <a href="tel:234-234-2334" style="color: #951C49;"><span>234-234-2334</span></a>
-            <div>we Deliver</div>
     </div>
-    </nav>
+</nav>
+    <div class="container-fliud" style="background-color: #f7f3fa;">
+        <a class="navbar-brand" href="#"></a>
 
-</header>
 
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-</body>
+      
+
+    </div>
+
+<!-- CONTENT -->
+    <body>
+
+        <section class="top-50 text-center" style="background-color: #e6d8ee;">
+            <div class="container d-sm-flex">
+                <div class="container p-5">
+
+                    <h1>COVENANT UNIVERISTY LIBRARY</h1>
+                    <div class="d-grid p-5">
+                        <a class="btn" href="homePage.html" style="background-color: #a476bb;" type="button">
+                            Student Login
+
+                        </a>
+                        <a class="btn" href="adminAccount" type="button" style="color:black;">
+                            I have an admin account
+                        </a>
+                    </div>
+                </div>
+                <img src="https://images.all-free-download.com/images/graphiclarge/manager_job_background_businesswoman_icon_cartoon_character_sketch_6837376.jpg" width="560" height="650" class="img-fluid" alt="...">
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="p-2 bg-dark text-white text-center postion-relative">
+            <div class="container">
+                <p class="lead">copyright &copy; 2022 LMS project</p>
+                <a href="#" 
+            </div> 
+        </footer>
+       
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    </body>
 
 </html>
