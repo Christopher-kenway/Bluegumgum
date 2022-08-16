@@ -25,12 +25,7 @@ h1{
     object-fit: contain;
 
 }
-.container {
-   
-    margin: 20px;
-    width: auto;
-}
-/*CSS FOR HOMEPAGE NAVBAR */
+*CSS FOR HOMEPAGE NAVBAR */
 .navbar {
     font-size: 15px;
   
@@ -137,8 +132,21 @@ h1{
 
 
 /*main content css*/
+.card {
+    width: 900px;
+    padding: 40px 40px 40px 40px;
 
-.material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
 }
 
+#button-addon2 {
+    width: 202px;
+    height: 40px;
+    background-color: #a476bb;
+    color: snow;
+    border-radius: 1.6px;
+   
+}
+
+.input-group{
+    width: 600px;
+}
