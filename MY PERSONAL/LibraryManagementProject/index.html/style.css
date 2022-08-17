@@ -25,7 +25,8 @@ h1{
     object-fit: contain;
 
 }
-*CSS FOR HOMEPAGE NAVBAR */
+/*SS FOR HOMEPAGE NAVBAR */
+
 .navbar {
     font-size: 15px;
   
@@ -98,6 +99,7 @@ h1{
     transition: all 0.5s;
     cursor: pointer;
     border: none;
+    
 }
 
     .btn a {
@@ -135,18 +137,28 @@ h1{
 .card {
     width: 900px;
     padding: 40px 40px 40px 40px;
+  
+    align-items: center;
 
 }
 
-#button-addon2 {
+#button-addon2{
+   
     width: 202px;
     height: 40px;
     background-color: #a476bb;
     color: snow;
     border-radius: 1.6px;
-   
 }
 
 .input-group{
-    width: 600px;
+    width: 800px;
+}
+
+#btndrp {
+    width: 202px;
+    height: 40px;
+    background-color: #a476bb;
+    color: snow;
+    border-radius: 1.6px;
 }
