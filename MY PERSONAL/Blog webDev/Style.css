@@ -2,11 +2,49 @@
 {
 
 }
+
+/*navbar style*/
+.nav  {
+ 
+    background-color: #12171a;
+
+}
+
 .bi::before {
     display: inline-block;
-    content: "";
-    vertical-align: -.125em;
-    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
-    background-repeat: no-repeat;
+    color: lightgray;
+    vertical-align: -.205em;
     background-size: 1rem 1rem;
+    padding: 10px 10px 10px 10px;
+}
+
+
+.navbar-brand {
+    font-family: 'Shrikhand', cursive; 
+    font-size: 30px;
+    color: white;
+}
+
+.navbar-nav {
+    color: red;
+}
+.navbar ul li {
+    padding: 0px 20px;
+}
+
+
+.bg-img {
+    background-image: url(music3.jpg);
+    min-height: 80px;
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: 50% 50%;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+    /* Needed to position the navbar */
+    position: relative;
+    object-fit: contain;
 }
