@@ -1,4 +1,6 @@
-﻿body
+﻿@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+body
 {
 
 }
@@ -19,25 +21,34 @@
 }
 
 
+/*2nd navbar menu style*/
+
+
 .navbar-brand {
-    font-family: 'Shrikhand', cursive; 
+    font-family: 'Shrikhand', cursive;
     font-size: 30px;
-    color: white;
+    color: black;
 }
 
-.navbar-nav {
-    color: red;
-}
+
 .navbar ul li {
-    padding: 0px 20px;
+    padding: 5px 10px;
+
 }
 
+.nav-item a {
+    color: white;   
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Vollkorn SC', serif;
+
+}
 
 .bg-img {
     background-image: url(music3.jpg);
-    min-height: 80px;
+   
     /* Center and scale the image nicely */
-    background-position: top;
+    background-position: 0px;
     background-repeat: no-repeat;
     background-size: cover;
     transform-origin: 50% 50%;
@@ -48,3 +59,64 @@
     position: relative;
     object-fit: contain;
 }
+
+/*main  style*/
+.main h1 {
+    padding: 70px 0px 10px 0px;
+    font-size: 90px;
+    font-weight: 900;
+    font-family: 'Pacifico', cursive;
+    color: #F54D05;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.main h2 {
+    font-family: 'Aclonica', sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;   
+}
+
+.btn {
+    width: 170px;
+    height: 70px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    border-radius: .4em;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 0;
+    transition: 0.3s;
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 9px;
+    border: none;
+    background-color: #F54D05;
+    text-decoration: none;
+    z-index: 1000;
+}
+    .btn::after {
+        content: "";
+        top: 0;
+        left: 0;
+       
+        background: linear-gradient(to right, #ff7675, #e84393);
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .btn:hover {
+        box-shadow: -5px -5px 0 0;
+        
+        transform: scale(0.9);
+    }
+.btn:hover::after {
+    opacity: 1;
+}
+
+/*main-content style*/
+#main-content{
+    background-color: darkgray;
+}
+
+
