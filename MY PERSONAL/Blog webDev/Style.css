@@ -78,7 +78,7 @@ body
     text-transform: capitalize;   
 }
 
-.btn {
+.btn-1 {
     width: 170px;
     height: 70px;
     text-align: center;
@@ -96,7 +96,7 @@ body
     text-decoration: none;
     z-index: 1000;
 }
-    .btn::after {
+    .btn-1::after {
         content: "";
         top: 0;
         left: 0;
@@ -105,18 +105,19 @@ body
         opacity: 0;
         transition: 0.3s;
     }
-    .btn:hover {
+    .btn-1:hover {
         box-shadow: -5px -5px 0 0;
         
         transform: scale(0.9);
     }
-.btn:hover::after {
+.btn-1:hover::after {
     opacity: 1;
 }
 
 /*main-content style*/
-#main-content{
-    background-color: darkgray;
+.card {
+    border-radius: 2px;
+    margin: 5px 30px
 }
 
 
