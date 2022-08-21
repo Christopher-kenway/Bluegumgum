@@ -101,7 +101,7 @@ body
         top: 0;
         left: 0;
        
-        background: linear-gradient(to right, #ff7675, #e84393);
+        background-image: linear-gradient(to right, #ff7675, #e84393);
         opacity: 0;
         transition: 0.3s;
     }
@@ -115,9 +115,30 @@ body
 }
 
 /*main-content style*/
-.card {
-    border-radius: 2px;
-    margin: 5px 30px
+section {
+    /**/
 }
 
 
+
+.card {
+    border-radius: 3px;
+    margin: 0px 0px;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(45deg,  #FF7F50, #F54D05, #F89880);
+}
+.card-img-top {
+    height: 400px;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: 50% 50%;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+    position: relative;
+}
+
+btn{
+
+}
