@@ -1,15 +1,51 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
-
-body
-{
-
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Josefin+Sans&display=swap');
+body {
+    /* background-image: linear-gradient(45deg,#1B1B1B, #040200, #1B1B1B);*/
+    font-family: 'Alegreya', serif;
 }
 
-/*navbar style*/
-.nav  {
- 
-    background-color: #12171a;
+/*<H> and <P> STYLES*/
+h1 {
+    padding: 70px 0px 10px 0px;
+    font-size: 90px;
+    font-weight: 900;
+    font-family: 'Pacifico', cursive;
+    color: #F54D05;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+h2 {
+    font-family: 'Aclonica', sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+h3 {
+    font-weight: 900;
+    font-family: 'Vollkorn SC', serif;
+    color: black;  
+}
 
+hr {
+    color: black;
+    border-top: 2px solid;
+}
+
+.heading {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Aclonica', sans-serif;
+}
+p {
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*navbar style*/
+.nav {
+    background-image: linear-gradient(45deg,#1B1B1B, #040200, #1B1B1B);
 }
 
 .bi::before {
@@ -60,23 +96,7 @@ body
     object-fit: contain;
 }
 
-/*main  style*/
-.main h1 {
-    padding: 70px 0px 10px 0px;
-    font-size: 90px;
-    font-weight: 900;
-    font-family: 'Pacifico', cursive;
-    color: #F54D05;
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-.main h2 {
-    font-family: 'Aclonica', sans-serif;
-    color: white;
-    text-align: center;
-    text-transform: capitalize;   
-}
+/*Button styles*/
 
 .btn-1 {
     width: 170px;
@@ -114,6 +134,62 @@ body
     opacity: 1;
 }
 
+.btn {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    width: 250px;
+    border-radius: 4px;
+    border: 0px;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #F54D05;
+}
+
+    .btn a {
+        z-index: 2;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.8s;
+        border: 2px solid rgba( 245, 77, 5,0.2);
+        background-color: rgba(245, 77, 5,0.1);
+    }
+
+    .btn::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.5s;
+        border: 1px solid rgba(255,255,255,0.2);
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    .btn:hover::before {
+        transform: rotate(-45deg);
+        background-color: rgba(255,255,255,0);
+    }
+
+    .btn:hover::after {
+        transform: rotate(45deg);
+        background-color: rgba(255,255,255,0);
+    }
+
+
 /*main-content style*/
 section {
     background-image: linear-gradient(45deg,#1B1B1B, #040200, #1B1B1B);
@@ -139,53 +215,3 @@ section {
     position: relative;
 }
 
-.btn {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-    width: 300px;
-    border-radius: 2px;
-}
-    .btn a {
-        z-index: 2;
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-    .btn a::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        transition: all 0.5s;
-        border: 1px solid rgba(255,255,255,0.2);
-        background-color: rgba(255,255,255,0.1);
-    }
-.btn-a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.5s;
-    border: 1px solid rgba(255,255,255,0.2);
-    background-color: rgba(255,255,255,0.1);
-}
-}
-
-.btn-a:hover::before {
-    transform: rotate(-45deg);
-    background-color: rgba(255,255,255,0);
-}
-
-.btn-a:hover::after {
-    transform: rotate(45deg);
-    background-color: rgba(255,255,255,0);
-}
-    
