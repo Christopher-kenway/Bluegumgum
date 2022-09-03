@@ -25,11 +25,12 @@ h2 {
     text-align: center;
     text-transform: capitalize;
 }
-h3 {
+h3, h4 {
     font-weight: 900;
     font-family: 'Vollkorn SC', serif;
     color: white;  
 }
+
 
 hr {
     color: black;
