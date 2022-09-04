@@ -6,7 +6,9 @@ body {
     font-family: 'Alegreya', serif;
 }
 
-
+a{
+    color: white;
+}
 
 /*<H> and <P> STYLES*/
 h1 {
@@ -276,4 +278,12 @@ section {
     visibility: visible;
     position: relative;
 }
+.card-img {
+    height: 330px;
+    width: 380px;
+    border-radius: 1px;
+    visibility: visible;
+    position: relative;
+}
+    
 
