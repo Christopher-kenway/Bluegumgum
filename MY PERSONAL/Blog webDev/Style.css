@@ -32,7 +32,7 @@ h2 {
 h3, h4 {
     font-weight: 900;
     font-family: 'Vollkorn SC', serif;
-    color: black;;  
+    color: black;  
 }
 
 
@@ -273,6 +273,7 @@ section {
 .card-img-top {
     height: 555px;
     background-position: 0px;
+    border-radius: 4px;
     background-repeat: no-repeat;
     background-size: cover;
     transform-origin: 50% 50%;
@@ -281,12 +282,7 @@ section {
     visibility: visible;
     position: relative;
 }
-.card-img {
-    
-    border-radius: 1px;
-    visibility: visible;
-    position: relative;
-}
+
 
 .carousel-inner {
     background-color: #F3EFE0;
