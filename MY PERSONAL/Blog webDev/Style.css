@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Josefin+Sans&display=swap');
 body {
-    background-color: #F3EFE0;
+    background-color: #FFF;
     font-family: 'Alegreya', serif;
 }
 
@@ -148,56 +148,65 @@ p {
     color: #FFF;
     transition: all 0.5s;
     position: relative;
-    width: 250px;
-    border-radius: 4px;
+    width: 300px;
+    border-radius: 2px;
     border: 0px;
-    font-family: "Josefin Sans", sans-serif;
-    background-color: #F54D05;
+   background-color: #F54D05;
+   transition: all 0.5s;
+    position: relative;
 }
 
-    .btn a {
-        z-index: 2;
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
+.btn a {
+    transition: all 0.3s;
+}
 
-    .btn::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        transition: all 0.8s;
-        border: 2px solid rgba( 245, 77, 5,0.2);
-        background-color: rgba(245, 77, 5,0.1);
-    }
 
-    .btn::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        transition: all 0.5s;
-        border: 1px solid rgba(255,255,255,0.2);
-        background-color: rgba(255,255,255,0.1);
-    }
 
-    .btn:hover::before {
-        transform: rotate(-45deg);
-        background-color: rgba(255,255,255,0);
-    }
+.btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.5s;
+    border-top-width: 1.5px;
+    border-bottom-width: 1.2px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(245, 77, 5,0.5);
+    border-bottom-color: rgba(245, 77, 5,0.5);
+    transform: scale(0.1, 1);
+}
 
-    .btn:hover::after {
-        transform: rotate(45deg);
-        background-color: rgba(255,255,255,0);
-    }
+.btn:hover span {
+    letter-spacing: 3px;
+}
+
+.btn:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.btn:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+/*SEE MORE BUTTON CSS*/
 .btn-2 {
    border: 0px;
    background-color: transparent;
@@ -220,10 +229,10 @@ p {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0;
-    transition: all 0.3s;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
+    opacity: 1;
+    transition: all 0.5s;
+    border-top-width: 1.5px;
+    border-bottom-width: 1.2px;
     border-top-style: solid;
     border-bottom-style: solid;
     border-top-color: rgba(245, 77, 5,0.5);
@@ -232,7 +241,7 @@ p {
 }
 
 .btn-2:hover span {
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .btn-2:hover::before {
@@ -259,7 +268,7 @@ p {
 
 /*main-content style*/
 section {
-    background-color: #F3EFE0;
+    background-color: #FFF;
 }
 
 
@@ -270,6 +279,7 @@ section {
     background-color: transparent; 
    
 }
+
 .card-img-top {
     height: 555px;
     background-position: 0px;
