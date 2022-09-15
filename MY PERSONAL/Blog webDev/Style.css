@@ -1,6 +1,7 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 body {
     background-color: #FFF;
     font-family: 'Alegreya', serif;
@@ -17,7 +18,7 @@ h1 {
     padding: 70px 0px 10px 0px;
     font-size: 90px;
     font-weight: 900;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Rampart One', cursive;
     color: #F54D05;
     display: block;
     margin: auto;
@@ -271,8 +272,16 @@ section {
     background-color: #FFF;
 }
 
+.carousel slide{
+    background-color: transparent;
+}
 
 
+.card-img {
+    height: 274px;
+    width: 450px;
+    border-radius: 2px;
+}
 .card {
     border-radius: 3px;
     margin: 0px 0px;
