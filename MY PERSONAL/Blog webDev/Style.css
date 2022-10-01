@@ -3,15 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 body {
-    background-color: #FFF;
+    background-color: #020c1b;
     font-family: 'Alegreya', serif;
 }
 
-a{
-    color: black;
-    
-    text-decoration-line: none;
-}
+
 
 /*<H> and <P> STYLES*/
 h1 {
@@ -26,19 +22,25 @@ h1 {
 }
 h2 {
     font-family: 'Aclonica', sans-serif;
-    color: black;
+    color: #ccd6f6;
     text-align: center;
     text-transform: capitalize;
 }
 h3, h4 {
     font-weight: 900;
     font-family: 'Vollkorn SC', serif;
-    color: black;  
+    color: #ccd6f6;
+    letter-spacing: 3px;
+}
+a {
+    font-weight: 900;
+    font-family: 'Vollkorn SC', serif;
+    color: #ccd6f6;
 }
 
 
 hr {
-    color: black;
+    color: #ccd6f6;
     border-top: 2px solid;
 }
 
@@ -50,8 +52,7 @@ hr {
 p {
     font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
-    color: black;
-    
+    color: lightgray;
 }
 /*navbar style*/
 .nav {
@@ -126,6 +127,8 @@ p {
     background-color: #F54D05;
     text-decoration: none;
     z-index: 1000;
+    letter-spacing: 3px;
+ 
 }
     .btn-1::after {
         content: "";
@@ -138,12 +141,13 @@ p {
     }
     .btn-1:hover {
         box-shadow: -5px -5px 0 0;
-        
+     
         transform: scale(0.9);
     }
-.btn-1:hover::after {
-    opacity: 1;
-}
+        .btn-1:hover::after {
+            opacity: 1;
+        
+        }
 
 .btn {
     color: #FFF;
@@ -152,14 +156,16 @@ p {
     width: 300px;
     border-radius: 2px;
     border: 0px;
-   background-color: #F54D05;
-   transition: all 0.5s;
+    background-color: #F54D05;
+    transition: all 0.5s;
     position: relative;
+    letter-spacing: 3px;
 }
 
-.btn a {
-    transition: all 0.3s;
-}
+    .btn a {
+        transition: all 0.3s;
+        letter-spacing: 3px;
+    }
 
 
 
@@ -209,9 +215,9 @@ p {
 }
 /*SEE MORE BUTTON CSS*/
 .btn-2 {
-   border: 0px;
-   background-color: transparent;
-   color: black;
+    border: 0px;
+    background-color: transparent;
+    color: #e6f1ff;
     width: 250px;
     height: 40px;
     transition: all 0.5s;
@@ -269,43 +275,25 @@ p {
 
 /*main-content style*/
 section {
-    background-color: #FFF;
-}
-
-.carousel slide{
-    background-color: transparent;
-}
-
-
-.card-img {
-    height: 274px;
-    width: 450px;
-    border-radius: 2px;
-}
-.card {
-    border-radius: 3px;
-    margin: 0px 0px;
-    background-color: transparent; 
    
 }
 
-.card-img-top {
-    height: 555px;
-    background-position: 0px;
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform-origin: 50% 50%;
-    opacity: 1;
-    transform: translate(0px, 0px);
-    visibility: visible;
-    position: relative;
-}
-
-
-.carousel-inner {
-    background-color: #F3EFE0;
+.card{
+    outline: none;
+    margin: 0px 0px;
+    background-color: #112240;
+    padding: 0px;
     
 }
+.card-link {
+    color: #F54D05;
+    letter-spacing: 2px;
+}
+.card-img-top{
+    height: 400px;
+  
+}
+   
+
     
 
