@@ -1,11 +1,79 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+﻿<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
+    <div class="containter p-5">
+        
+        <div class="card-body text-center">
+        <div class="containter p-2">123</div>
+            <div class="operand" id="display"></div>
 
+            <!-- first row -->
+
+            <div class="col p-1">
+                <button type="button" class="btn-op" id="clear">C</button>
+                <button type="button" class="btn-op" id="back">CE</button>
+                <button type="button" class="btn-op" id="%">%</button>
+                <button type="button" class="btn-op" id="/">&divide;</button>
+            </div>
+
+
+            <!-- second row -->
+
+            <div class="col p-1">
+                <button type="button" class="btn-num" id="7">7</button>
+                <button type="button" class="btn-num" id="8">8</button>
+                <button type="button" class="btn-num" id="9">9</button>
+                <button type="button" class="btn-op" id="*">x</button>
+            </div>
+
+
+            <!-- third row -->
+            <div class="col p-1">
+                <button type="button" class="btn-num" id="4">4</button>
+                <button type="button" class="btn-num" id="5">5</button>
+                <button type="button" class="btn-num" id="6">6</button>
+                <button type="button" class="btn-op" id="-">-</button>
+            </div>
+
+            <!-- fourth row -->
+            <div class="col p-1">
+                <button type="button" class="btn-num" id="btn1">1</button>
+                <button type="button" class="btn-num" id="2">2</button>
+                <button type="button" class="btn-num" id="3">3</button>
+                <button type="button" class="btn-op" id="+">+</button>
+            </div>
+
+            <!-- fifth row -->
+            <div class="col p-1">
+                <button type="button" class="btn-0" id="0">0</button>
+                <button type="button" class="btn-num" id=".">.</button>
+                <button type="button" class="btn-op" id="=">=</button>
+            </div>
+
+        </div>
+        </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+   <script>
+       const btn1 = document.querySelector('#btn1');
+       const display = document.getElementById('display');
+
+       btn1.onclick = function () {
+           display.append('1');
+       }
+   </script>
 </body>
 </html>

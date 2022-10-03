@@ -1,3 +1,56 @@
-﻿body
-{
+﻿@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: peachpuff;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+
+.form-control{
+    text-align: right;  
+    height: 60px;
+    margin: 5px auto;
+    padding-top: 20px;
+    font-size: 25px;
+    border: 3px solid rgba(153,153,153,1);
+    color: beige;
+}
+.card-body{ 
+    width: 320px;
+    height: 400px;
+    background-color: white;
+    border-radius: 7px;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px 4px;
+}
+
+
+.btn-op, .btn-num, .btn-0 {
+    align-content: center;
+    text-align: center;
+    margin: 5px 5px auto 5px;
+    border-radius: 10px;
+    text-align: center;
+    transition-duration: 0.5s;
+    background-color: #48aaad;
+}
+.btn-op, .btn-num {
+        height: 50px;
+        width: 60px;
+        position: relative;
+    }
+.btn-0{
+    height: 50px;
+    width: 134px;
+    position: relative;
+}
+.btn-op:hover{
+    background-color    : red;
 }
